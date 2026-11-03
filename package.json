@@ -1,0 +1,11 @@
+{
+  "name": "rally-point",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "serve": "npx --yes serve public -l 5050",
+    "setup": "bash scripts/setup-firebase.sh",
+    "deploy": "npx --yes firebase-tools@15 deploy"
+  }
+}

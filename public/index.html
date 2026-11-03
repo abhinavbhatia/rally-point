@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rally Point</title>
+  <meta name="description" content="Animated badminton rules and an umpire scorekeeper, updated for 3x15 scoring.">
+  <meta name="theme-color" content="#1f5c41">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Rally Point home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="21" r="6" fill="var(--accent)"/><path d="M15 17 L27 5 L29 9 L18 20 Z" fill="currentColor" opacity=".9"/><path d="M14 16 L22 4 L27 5 L15 17Z" fill="currentColor" opacity=".55"/></svg>
+      <span>Rally Point</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/learn" data-nav="learn">Learn</a>
+      <a href="#/umpire" data-nav="umpire">Umpire</a>
+      <a href="#/play" data-nav="play">Play</a>
+    </nav>
+    <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+    </button>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot">
+    Based on the BWF Laws of Badminton, including the 3 × 15 changes approved in April 2026. Not an official BWF app.
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
